@@ -1,0 +1,111 @@
+.loading p,
+.error p,
+.loading {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.productContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.productWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.searchBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.searchBox input {
+  width: 75%;
+  padding: 15px 8px;
+  border: none;
+  outline: none;
+  color: grey;
+  font-weight: bold;
+  font-size: larger;
+  -webkit-box-shadow: 2px 7px 12px 0px rgba(214, 206, 214, 1);
+  -moz-box-shadow: 2px 7px 12px 0px rgba(214, 206, 214, 1);
+  box-shadow: 2px 7px 12px 0px rgba(214, 206, 214, 1);
+}
+
+.productTitle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.productTitle h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.productTitle p {
+  text-align: center;
+  color: gray;
+}
+
+.productCategories {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.productCategories button {
+  border: none;
+  outline: none;
+  background-color: white;
+  color: #333;
+  padding: 10px 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 7px 12px 0px rgba(214, 206, 214, 1);
+  -moz-box-shadow: 2px 7px 12px 0px rgba(214, 206, 214, 1);
+  box-shadow: 2px 7px 12px 0px rgba(214, 206, 214, 1);
+}
+
+.productCategories button:hover {
+  background-color: whitesmoke;
+}
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .productList {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .productList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .productList {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

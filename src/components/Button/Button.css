@@ -1,0 +1,18 @@
+#globalBtn {
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+#globalBtn:hover {
+  background-color: limegreen;
+}
