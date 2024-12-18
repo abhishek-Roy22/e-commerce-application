@@ -8,7 +8,7 @@ import ProductList from './pages/ProductList/ProductList';
 import ProductDetails from './pages/ProductDetails/ProductDetails';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import cartStore from './store/CartStore.js';
+import cartStore from './store/cartStore.js';
 import Checkout from './pages/Checkout/Checkout.jsx';
 
 const appRouter = createBrowserRouter([
